@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1541445667 source:c:\users\ania\desktop\nowy folder\workshops\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"inc/GBM.h"
+	"inc/Random.h"
+
+1541447006 source:c:\users\ania\desktop\nowy folder\workshops\src\gbm.cpp
+	"../inc/GBM.h"
+	<cmath>
+
+1541446401 c:\users\ania\desktop\nowy folder\workshops\inc\gbm.h
+	<vector>
+	"../inc/Random.h"
+
+1541445285 source:c:\users\ania\desktop\nowy folder\workshops\src\random.cpp
+	"../inc/Random.h"
+	<cmath>
+	<cstdlib>
+
+1541446711 c:\users\ania\desktop\nowy folder\workshops\inc\random.h
+	<vector>
+	<exception>
+
