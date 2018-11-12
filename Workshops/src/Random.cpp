@@ -2,7 +2,7 @@
 #include "../inc/Random.h"
 #include <cmath>
 #include <cstdlib>
-//#include <utility>
+#include <ctime>
 
 using namespace std;
 
@@ -26,4 +26,23 @@ std::vector<double> GaussianBoxMuller::generateVector(int N)
 		++i;
     }
     return results;
+}
+void GaussianCpp11::setSeed(int s)
+{
+	std::default_random_engine generator(s);
+}
+double GaussianCpp11::generate(void)
+{
+	std::default_random_engine gen((int)time(NULL));
+	return _distribution(gen);
+}
+std::vector<double> GaussianCpp11::generateVector(int N)
+{
+	int i = 0;
+	vector<double> results(N);
+	while (i < N) {
+		results[i] = this->generate();
+		++i;
+	}
+	return results;
 }
