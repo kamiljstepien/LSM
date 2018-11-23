@@ -18,7 +18,7 @@ LSM::LSM(const AmericanOption& AM, const std::vector<std::vector<double>>& StocP
 	_StockPriceStep.erase(_StockPriceStep.begin());
 	this->_AMPayoffStep.resize(_StockPriceStep.size());
 	for (size_t i = 0; i < _AMPayoffStep.size(); ++i)
-		_AMPayoffStep[i] = _AM.payOff(_StockPriceStep[i]);
+		_AMPayoffStep[i] = _AM.payOffPut(_StockPriceStep[i]);
 }
 double LSM::price()
 {
