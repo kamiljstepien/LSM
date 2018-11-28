@@ -11,3 +11,4 @@ private:
 	std::vector<std::vector<double>> _StockPriceStep;
 	std::vector<std::vector<double>> _AMPayoffStep;
 };
+

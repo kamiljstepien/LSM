@@ -3,6 +3,8 @@
 
 class AmericanOption{
 public:
+	AmericanOption() {};//konstruktor domyœlny
+
     AmericanOption(double K, double T, double r):
         _K(K),
         _T(T),

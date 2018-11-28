@@ -154,8 +154,10 @@
     <ClInclude Include="inc\AmericanOption.h" />
     <ClInclude Include="inc\GBM.h" />
     <ClInclude Include="inc\LSM.h" />
+    <ClInclude Include="inc\LSMBuilder.h" />
     <ClInclude Include="inc\PolynomialRegression.h" />
     <ClInclude Include="inc\Random.h" />
+    <ClInclude Include="inc\YieldCuve.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +170,7 @@
     <ClCompile Include="src\AmericanOption.cpp" />
     <ClCompile Include="src\GBM.cpp" />
     <ClCompile Include="src\LSM.cpp" />
+    <ClCompile Include="src\LSMBuilder.cpp" />
     <ClCompile Include="src\PolynomialRegression.cpp" />
     <ClCompile Include="src\Random.cpp" />
     <ClCompile Include="Workshops.cpp" />

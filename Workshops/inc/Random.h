@@ -2,6 +2,7 @@
 #include <vector>
 #include <exception>
 #include <random>
+#include <map>
 
 //Gaussian Random Number Generation
 class Gaussian{
@@ -40,4 +41,23 @@ public:
 	~GaussianCpp11() {};
 private:
 	std::normal_distribution<double> _distribution;
+};
+
+enum GaussianRandomGenerators 
+{
+	BoxNuller,
+	InverseCDF,
+	Cpp11Generator
+};
+
+class GaussianStrategyPattern
+{
+public:
+	GaussianStrategyPattern()
+	{
+		_Strategies[GaussianRandomGenerators::BoxNuller] = new GaussianBoxMuller();
+		_Strategies[GaussianRandomGenerators::Cpp11Generator] = new GaussianCpp11();
+	}
+private:
+	std::map< GaussianRandomGenerators, Gaussian*> _Strategies;
 };
